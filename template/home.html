@@ -1,1 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Breast Cancer Classification</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    justify-self: center;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(to bottom right,#f8cfd7,#dea3bb,#c04dc4);
+}
+
+form {
+    margin-top:20px;
+    width: 25rem;
+    height: 30rem;
+    justify-content: center;
+    align-items: center;
+    display: flexbox;
+    flex-direction: column;
+    background: rgba(255, 30, 30, 0.06);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 30px;
+}
+
+h1 {
+    font-size: 35px;
+    color: black;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+    opacity: 0.85;
+}
+
+label {
+    font-size: 18px;
+    color: black;
+    opacity: 0.85;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    width: 20%;
+    margin-left: 1%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+button {
+    width: 40%;
+    margin: 3% auto;
+    color:white;
+    font-size: 20px;
+    opacity: 0.7;
+    background:black;
+    padding: 7px 45px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+    box-shadow: 3px 3px 5px rgba(31, 38, 135, 0.37);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+</style>
+   
+  
+  </head>
+  <body>
+    <center>
+      
+      <h1>Breast Cancer Classification</h1>
+      <form action="/predict" method="post">
+        <br>
+        <label for="param0">Id:</label>
+        <input type="text" name="param0"  /><br /><br />
+
+        <label for="param1">Radius:</label>
+        <input type="text" name="param1"  /><br /><br />
+
+        <label for="param2">Texture:</label>
+        <input type="text" name="param2"  /><br /><br />
+
+        <label for="param1">Perimeter:</label>
+        <input type="text" name="param3" /><br /><br />
+
+        <label for="param4">Area:</label>
+        <input type="text"  name="param4" /><br /><br />
+
+        <label for="param5">Smoothness:</label>
+        <input type="text"  name="param5" /><br /><br />
+
+        <label for="param6">Compactness:</label>
+        <input type="text"  name="param6" /><br /><br />
+
+        <label for="param7">Concavity:</label>
+        <input type="text" name="param7" /><br /><br />
+
+        <label for="param8">Concave points:</label>
+        <input type="text"  name="param8" /><br /><br />
+
+        <label for="param9">Symmetry:</label>
+        <input type="text" name="param9" /><br /><br />
+
+        <label for="param10">Fractal dimension:</label>
+        <input type="text" name="param10" /><br /><br />
+
+        <!-- Add similar input fields for the other parameters -->
+<br><br><br>
+        <button>Predict</button>
+      </form>
+      <br><br><br><br><br>
+      <h2>{{result}}</h2>
+    </center>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORGOT PASSWORD</title>
+    <link rel="stylesheet" href="static\style2.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(186, 152, 158);
+    height: 80vh;
+}
+forms{
+    background: rgb(186, 219, 232);
+    height: 50vh;
+    width: 54vh;
+    padding-left: 6vh;
+    margin-top:20px;
+    width: 25rem;
+    height: 30rem;
+    justify-content: center;
+    align-items: center;
+    display: flexbox;
+    flex-direction: column;
+    box-shadow: 5px 2px 5px 0 white;
+    border-radius: 30px;
+}
+p{
+    position: relative;left: 12vh;
+}
+h2{
+    position: relative;bottom: 8vh; left: 10vh;
+}
+.input1 {
+    position: relative;left: 11vh;top:4vh;
+
+}
+.input2 {
+    position: relative;left: 4vh;top: 6vh;
+}
+
+.input3 {
+    position: relative;left: .5vh;top: 8vh;
+}
+a input{
+    position:relative;left: 15vh;top: 14vh;
+    background: black;
+    border: none;
+    height: 5vh;
+    width: 30%;
+    color: white;
+    border-radius: 3vh;
+
+}
+
+    </style>
+</head>
+<body>
+    <form acion ="/forget",method="get">
+        <h2>CHANGE PASSWORD</h2>
+        <p>ENTER A VALID MAILID:</p>
+        <label type="username" class="input1">Gmail:</label>
+        <input class="input1" type="text" placeholder="mail id"><br><br>
+        <label for="username" class="input2">New Password:</label>
+        <input type="password" class="input2" placeholder="password"><br><br>
+        <label for="password" class="input3">Confirm Password:</label>
+        <input type="password" class="input3" placeholder="password"><br><br>
+        <a href="/template/index.html"><input type="submit" value="Confirm" onclick="myFunction()"></a><br>
+
+<script>
+function myFunction() {
+  alert("Password changed successfully !!!");
+}
+</script>
+
+
+    </form>
+  </body>
+</html>
