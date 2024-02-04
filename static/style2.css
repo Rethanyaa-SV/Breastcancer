@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(186, 152, 158);
+    height: 80vh;
+}
+form{
+    background: rgb(186, 219, 232);
+    height: 50vh;
+    width: 54vh;
+    padding-left: 6vh;
+    margin-top:20px;
+    width: 25rem;
+    height: 30rem;
+    justify-content: center;
+    align-items: center;
+    display: flexbox;
+    flex-direction: column;
+    box-shadow: 5px 2px 5px 0 white;
+    border-radius: 30px;
+}
+p{
+    position: relative;left: 12vh;
+}
+h2{
+    position: relative;bottom: 8vh; left: 10vh;
+}
+.input1 {
+    position: relative;left: 11vh;top:4vh;
+
+}
+.input2 {
+    position: relative;left: 4vh;top: 6vh;
+}
+
+.input3 {
+    position: relative;left: .5vh;top: 8vh;
+}
+a input{
+    position:relative;left: 20vh;top: 14vh;
+}

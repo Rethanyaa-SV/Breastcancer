@@ -1,1 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    justify-self: center;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(to bottom right,#f894a7,#e34d88,#a65aa8,#5f2f72);
+}
+
+form {
+    margin-top:20px;
+    width: 25rem;
+    height: 30rem;
+    justify-content: center;
+    align-items: center;
+    display: flexbox;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 30px;
+}
+
+h1 {
+    font-size: 35px;
+    color: black;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+    opacity: 0.85;
+}
+
+label {
+    font-size: 18px;
+    color: black;
+    opacity: 0.85;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    width: 20%;
+    margin-left: 1%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+button {
+    width: 40%;
+    margin: 3% auto;
+    color:black;
+    font-size: 20px;
+    opacity: 0.7;
+    background: rgba(255, 255, 255, 0.06);
+    padding: 7px 45px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+    box-shadow: 3px 3px 5px rgba(31, 38, 135, 0.37);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
